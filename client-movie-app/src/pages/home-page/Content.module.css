@@ -1,0 +1,807 @@
+@media (min-width: 1000px) {
+    .contain {
+        position: relative;
+        max-width: 1200px;
+        color: rgb(218, 198, 198);
+        margin: 0 auto;
+
+        /* border: 1px solid green; */
+    }
+    .div-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        /* border: 1px solid green; */
+        height: 50px;
+        position: relative;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+        /* border: 1px solid rgb(211, 211, 109); */
+        width: 100%;
+        height: 100%;
+    }
+    .navbar span {
+        cursor: pointer;
+    }
+    .navbar span:hover {
+        transition: transform 0.5s;
+        transform: scale(1.2);
+        text-decoration: overline;
+    }
+    .div-span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    .div-span svg {
+        width: 18px;
+    }
+    .content {
+        max-width: 100%;
+        /* border: 1px solid yellow; */
+        margin: 2em 0;
+    }
+    .content h2 {
+        margin-left: 1em;
+    }
+    .active {
+        color: rgb(111, 111, 238);
+        transform: scale(1.2);
+        font-weight: bold;
+    }
+    .listMovie {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .listImage {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listImage img {
+        object-fit: fill;
+        width: 93%;
+        height: 93%;
+        cursor: pointer;
+    }
+    .listImage img:hover {
+        transition: transform 0.5s;
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+    .page {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        /* border: 1px solid green; */
+        margin-bottom: 5em;
+    }
+    .page input {
+        width: 50px;
+        height: 20px;
+        text-align: right;
+        background-color: black;
+        color: rgb(218, 198, 198);
+        font-size: 15px;
+    }
+    .page button {
+        width: 80px;
+        height: 30px;
+        background-color: rgb(218, 198, 198);
+        color: rgb(6, 63, 6);
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    .page button:hover {
+        cursor: pointer;
+        background-color: rgb(14, 177, 14);
+    }
+    .page-number {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .genre {
+        width: 330px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid rgb(179, 155, 155);
+        border-radius: 12px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1em; */
+        padding: 1em;
+        position: absolute;
+        background-color: rgb(61, 52, 52);
+        top: 80%;
+        right: 20%;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.651);
+    }
+    .genre p:hover {
+        cursor: pointer;
+        color: rgb(21, 231, 21);
+        transition: transform 0.5s;
+        transform: scale(1.1);
+    }
+    .youtube-contain {
+        position: fixed;
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid green; */
+        transform: translate(-50%, -50%);
+        top: 50vh;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+    .youtube-contain button {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+        background-color: rgb(179, 132, 132);
+        align-self: flex-end;
+        margin-right: 2em;
+        border-radius: 6px;
+        color: rgb(9, 29, 9);
+        cursor: pointer;
+    }
+    .youtube {
+        box-sizing: border-box;
+        padding: 2em;
+        width: 100%;
+        height: 420px;
+        color: white;
+        display: flex;
+        gap: 1em;
+        z-index: 9999;
+        height: 450px;
+    }
+    .youtube-description {
+        width: 50%;
+        height: 100%;
+    }
+    .youtube-video {
+        width: 50%;
+        height: 100%;
+    }
+    .youtube-image {
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid green; */
+    }
+    .youtube-image img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 999px) {
+    .contain {
+        position: relative;
+        max-width: 1200px;
+        color: rgb(218, 198, 198);
+        margin: 0 auto;
+
+        /* border: 1px solid green; */
+    }
+    .div-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        /* border: 1px solid green; */
+        height: 50px;
+        position: relative;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+        /* border: 1px solid rgb(211, 211, 109); */
+        width: 100%;
+        height: 100%;
+    }
+    .navbar span {
+        cursor: pointer;
+    }
+    .navbar span:hover {
+        transition: transform 0.5s;
+        transform: scale(1.2);
+        text-decoration: overline;
+    }
+    .div-span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    .div-span svg {
+        width: 18px;
+    }
+    .content {
+        max-width: 100%;
+        /* border: 1px solid yellow; */
+        margin: 2em 0;
+    }
+
+    .content h2 {
+        margin-left: 1em;
+    }
+    .active {
+        color: rgb(111, 111, 238);
+        transform: scale(1.2);
+        font-weight: bold;
+    }
+    .listMovie {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 1em;
+        /* border: 1px solid green; */
+    }
+
+    .listImage {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listImage img {
+        object-fit: fill;
+        width: 93%;
+        height: 93%;
+        cursor: pointer;
+    }
+    .listImage img:hover {
+        transition: transform 0.5s;
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+    .page {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        /* border: 1px solid green; */
+        margin-bottom: 5em;
+    }
+    .page input {
+        width: 50px;
+        height: 20px;
+        text-align: right;
+        background-color: black;
+        color: rgb(218, 198, 198);
+        font-size: 15px;
+    }
+    .page button {
+        width: 80px;
+        height: 30px;
+        background-color: rgb(218, 198, 198);
+        color: rgb(6, 63, 6);
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    .page button:hover {
+        cursor: pointer;
+        background-color: rgb(14, 177, 14);
+    }
+    .page-number {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .genre {
+        width: 330px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid rgb(179, 155, 155);
+        border-radius: 12px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1em; */
+        padding: 1em;
+        position: absolute;
+        background-color: rgb(61, 52, 52);
+        top: 80%;
+        right: 20%;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.651);
+    }
+    .genre p:hover {
+        cursor: pointer;
+        color: rgb(21, 231, 21);
+        transition: transform 0.5s;
+        transform: scale(1.1);
+    }
+    .youtube-contain {
+        position: fixed;
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid green; */
+        transform: translate(-50%, -50%);
+        top: 50vh;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+    .youtube-contain button {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+        background-color: rgb(179, 132, 132);
+        align-self: flex-end;
+        margin-right: 2em;
+        border-radius: 6px;
+        color: rgb(9, 29, 9);
+        cursor: pointer;
+    }
+    .youtube {
+        /* position: absolute; */
+        box-sizing: border-box;
+        padding: 2em;
+        width: 100%;
+        height: 80%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        /* z-index: 9999; */
+    }
+    .youtube-description {
+        width: 100%;
+        height: 40%;
+    }
+    .youtube-video {
+        width: 100%;
+        height: 60%;
+    }
+    .youtube-image {
+        width: 100%;
+        height: 60%;
+        /* border: 1px solid green; */
+    }
+    .youtube-image img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 799px) {
+    .contain {
+        position: relative;
+        max-width: 1200px;
+        color: rgb(218, 198, 198);
+        margin: 0 auto;
+
+        /* border: 1px solid green; */
+    }
+    .div-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        /* border: 1px solid green; */
+        height: 50px;
+        position: relative;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+        /* border: 1px solid rgb(211, 211, 109); */
+        width: 100%;
+        height: 100%;
+    }
+    .navbar span {
+        cursor: pointer;
+    }
+    .navbar span:hover {
+        transition: transform 0.5s;
+        transform: scale(1.2);
+        text-decoration: overline;
+    }
+    .div-span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    .div-span svg {
+        width: 18px;
+    }
+    .content {
+        max-width: 100%;
+        /* border: 1px solid yellow; */
+        margin: 2em 0;
+    }
+
+    .content h2 {
+        margin-left: 1em;
+    }
+    .active {
+        color: rgb(111, 111, 238);
+        transform: scale(1.2);
+        font-weight: bold;
+    }
+    .listMovie {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 1em;
+        /* border: 1px solid green; */
+    }
+
+    .listImage {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listImage img {
+        object-fit: fill;
+        width: 93%;
+        height: 93%;
+        cursor: pointer;
+    }
+    .listImage img:hover {
+        transition: transform 0.5s;
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+    .page {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        /* border: 1px solid green; */
+        margin-bottom: 5em;
+    }
+    .page input {
+        width: 50px;
+        height: 20px;
+        text-align: right;
+        background-color: black;
+        color: rgb(218, 198, 198);
+        font-size: 15px;
+    }
+    .page button {
+        width: 80px;
+        height: 30px;
+        background-color: rgb(218, 198, 198);
+        color: rgb(6, 63, 6);
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    .page button:hover {
+        cursor: pointer;
+        background-color: rgb(14, 177, 14);
+    }
+    .page-number {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .genre {
+        width: 330px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid rgb(179, 155, 155);
+        border-radius: 12px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1em; */
+        padding: 1em;
+        position: absolute;
+        background-color: rgb(61, 52, 52);
+        top: 80%;
+        right: 20%;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.651);
+    }
+    .genre p:hover {
+        cursor: pointer;
+        color: rgb(21, 231, 21);
+        transition: transform 0.5s;
+        transform: scale(1.1);
+    }
+    .youtube-contain {
+        position: fixed;
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid green; */
+        transform: translate(-50%, -50%);
+        top: 50vh;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+    .youtube-contain button {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+        background-color: rgb(179, 132, 132);
+        align-self: flex-end;
+        margin-right: 2em;
+        border-radius: 6px;
+        color: rgb(9, 29, 9);
+        cursor: pointer;
+    }
+    .youtube {
+        box-sizing: border-box;
+        padding: 2em;
+        width: 100%;
+        height: 80%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .youtube-description {
+        width: 100%;
+        height: 40%;
+    }
+    .youtube-video {
+        width: 100%;
+        height: 60%;
+    }
+    .youtube-image {
+        width: 100%;
+        height: 60%;
+        /* border: 1px solid green; */
+    }
+    .youtube-image img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 660px) {
+    .youtube-contain {
+        position: fixed;
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid green; */
+        transform: translate(-50%, -50%);
+        top: 50vh;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+    .youtube-contain button {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+        background-color: rgb(179, 132, 132);
+        align-self: flex-end;
+        margin-right: 2em;
+        border-radius: 6px;
+        color: rgb(9, 29, 9);
+        cursor: pointer;
+    }
+    .youtube {
+        box-sizing: border-box;
+        padding: 2em;
+        width: 100%;
+        height: 80%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .youtube-description {
+        width: 100%;
+        height: 40%;
+    }
+    .youtube-video {
+        width: 100%;
+        height: 60%;
+    }
+    .youtube-image {
+        width: 100%;
+        height: 60%;
+        /* border: 1px solid green; */
+    }
+    .youtube-image img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 599px) {
+    .contain {
+        position: relative;
+        max-width: 1200px;
+        color: rgb(218, 198, 198);
+        margin: 0 auto;
+
+        /* border: 1px solid green; */
+    }
+    .div-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        /* border: 1px solid green; */
+        height: 50px;
+        position: relative;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+        /* border: 1px solid rgb(211, 211, 109); */
+        width: 100%;
+        height: 100%;
+    }
+    .navbar span {
+        cursor: pointer;
+    }
+    .navbar span:hover {
+        transition: transform 0.5s;
+        transform: scale(1.2);
+        text-decoration: overline;
+    }
+    .div-span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    .div-span svg {
+        width: 18px;
+    }
+    .content {
+        max-width: 100%;
+        /* border: 1px solid yellow; */
+        margin: 2em 0;
+    }
+
+    .content h2 {
+        margin-left: 1em;
+    }
+    .active {
+        color: rgb(111, 111, 238);
+        transform: scale(1.2);
+        font-weight: bold;
+    }
+    .listMovie {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 1em;
+        /* border: 1px solid green; */
+    }
+
+    .listImage {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listImage img {
+        object-fit: fill;
+        width: 93%;
+        height: 93%;
+        cursor: pointer;
+    }
+    .listImage img:hover {
+        transition: transform 0.5s;
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }
+    .page {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        /* border: 1px solid green; */
+        margin-bottom: 5em;
+    }
+    .page input {
+        width: 50px;
+        height: 20px;
+        text-align: right;
+        background-color: black;
+        color: rgb(218, 198, 198);
+        font-size: 15px;
+    }
+    .page button {
+        width: 80px;
+        height: 30px;
+        background-color: rgb(218, 198, 198);
+        color: rgb(6, 63, 6);
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    .page button:hover {
+        cursor: pointer;
+        background-color: rgb(14, 177, 14);
+    }
+    .page-number {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .genre {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid rgb(179, 155, 155);
+        border-radius: 12px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1em; */
+        padding: 1em;
+        position: absolute;
+        background-color: rgb(61, 52, 52);
+        top: 80%;
+        right: 5%;
+    }
+    .youtube {
+        box-sizing: border-box;
+        padding: 2em;
+        width: 100%;
+        height: 80%px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .youtube-description {
+        width: 100%;
+        height: 50%;
+    }
+    .youtube-video {
+        width: 100%;
+        height: 50%;
+    }
+    .youtube-image {
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid green; */
+    }
+    .youtube-image img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}

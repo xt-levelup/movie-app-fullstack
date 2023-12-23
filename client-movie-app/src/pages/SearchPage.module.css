@@ -1,0 +1,7 @@
+.search-page {
+    box-sizing: border-box;
+    color: white;
+    max-width: 1200px;
+    /* border: 1px solid blue; */
+    padding: 1em;
+}

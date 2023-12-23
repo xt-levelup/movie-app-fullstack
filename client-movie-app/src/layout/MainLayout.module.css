@@ -1,0 +1,48 @@
+.contain {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+}
+
+.nav {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    font-family: "Ubuntu", sans-serif;
+    /* border: 1px solid green; */
+    z-index: 99;
+}
+
+.nav a {
+    color: red;
+    font-size: 20px;
+
+    text-decoration: none;
+}
+
+.nav a.active {
+    font-weight: 700;
+}
+.nav a:hover {
+    color: rgb(134, 136, 8);
+    transition: transform 0.5s;
+    transform: scale(1.1);
+    /* text-decoration: overline; */
+}
+
+.nav svg {
+    color: rgb(231, 216, 216);
+    width: 30px;
+    font-weight: bold;
+}
+.nav svg:hover {
+    color: rgb(23, 182, 23);
+}
